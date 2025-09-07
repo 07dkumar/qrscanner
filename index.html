@@ -30,24 +30,39 @@
       max-width: 800px;
       margin: auto;
     }
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      margin-top: 1rem;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s;
+      font-size: 1rem;
+    }
+    .cta-button:hover {
+      background: #388E3C;
+    }
     footer {
       margin-top: 2rem;
       padding: 1rem;
       background: #eee;
       font-size: 0.9rem;
     }
-    a.button {
+    ul.features {
+      text-align: left;
       display: inline-block;
-      padding: 0.8rem 1.2rem;
-      margin-top: 1rem;
-      background: #2d89ef;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.2s;
+      padding-left: 0;
     }
-    a.button:hover {
-      background: #1a5fb4;
+    ul.features li {
+      list-style: none;
+      margin: 0.5rem 0;
+    }
+    ul.features li:before {
+      content: "✔";
+      margin-right: 0.5rem;
+      color: #4CAF50;
     }
   </style>
 </head>
@@ -61,28 +76,33 @@
   <section>
     <h2>About the App</h2>
     <p>
-      Our QR Scanner app helps you scan any QR code instantly using your phone’s camera. 
-      It is lightweight, works offline, and supports multiple QR formats.
+      Our QR Scanner app allows you to scan any QR code instantly using your phone’s camera. Lightweight, works offline, and supports multiple QR formats, it’s designed with simplicity and privacy in mind.
     </p>
     <p>
-      Whether you need to open a website, view contact details, or scan product information — 
-      this app makes it simple and safe.
+      Whether you need to open a website, view contact details, scan product information, or launch promotions—this app makes it seamless and secure.
     </p>
-    <a href="https://07dkumar.github.io/qrscanner/" class="button">Open QR Scanner</a>
+    <a href="https://play.google.com/store/apps/details?id=com.qrbar.scanner" class="cta-button" target="_blank" rel="noopener">
+      Download on Google Play
+    </a>
   </section>
 
   <section>
-    <h2>Features</h2>
-    <ul style="text-align:left; display:inline-block;">
-      <li>✔ Instant QR code scanning</li>
-      <li>✔ Works offline</li>
-      <li>✔ Simple and user-friendly</li>
-      <li>✔ 100% Free</li>
+    <h2>Key Features</h2>
+    <ul class="features">
+      <li>Instant QR Code Scanning</li>
+      <li>Offline Functionality</li>
+      <li>Supports Multiple QR Formats</li>
+      <li>Privacy-First Design — No Unnecessary Permissions</li>
+      <li>Clean, Minimalistic Interface</li>
+      <li>100% Free, No Ads!</li>
     </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 QR Scanner App | <a href="/ads.txt">ads.txt</a></p>
+    <p>
+      &copy; 2025 QR Scanner App  
+      |  <a href="/ads.txt">ads.txt</a>
+    </p>
   </footer>
 
 </body>
